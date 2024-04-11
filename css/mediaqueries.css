@@ -8,7 +8,7 @@
     }
     #contact,
     #projects {
-      height: fit-content;
+      height: auto;
     }
   }
   
