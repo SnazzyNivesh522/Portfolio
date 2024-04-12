@@ -167,7 +167,7 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: auto;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -413,8 +413,8 @@ article .icon {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
-  height: auto;
+  width: 50%;
+  height: 50%;
   
 }
 
