@@ -1,392 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mediaqueries.css" />
-    <script src="./js/script.js"></script>
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Nivesh Pritmani</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#Interests">Interests</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivesh Pritmani | Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/linux-icon.png">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Nivesh Pritmani</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Nivesh Pritmani</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>user@portfolio:~$ Nivesh Pritmani</h1>
+            <p>Passionate about Linux and open-source software. Welcome to my terminal-inspired portfolio!</p>
+            <a href="https://github.com/SnazzyNivesh522" class="btn btn-outline-light btn-lg">View My GitHub</a>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#Interests" onclick="toggleMenu()">Interests</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="img/profile.jpeg" alt="Profile Picture" class="img-fluid rounded-circle mb-3">
+                </div>
+                <div class="col-md-8">
+                    <h2>About Me</h2>
+                    <p>I am a final-year B.Tech student specializing in Information and Communication Technology at Pandit Deendayal Energy University. My passion lies in creating impactful solutions through full-stack development and machine learning. With a CGPA of 9.62, I have developed strong technical skills and a keen interest in applying them to real-world challenges.My coursework and projects have provided me with a solid foundation in programming languages such as Python, Java, and web technologies like HTML, CSS, and JavaScript. I have also gained hands-on experience with cloud technologies, including AWS, and DevOps tools like Docker. My expertise extends to machine learning, where I have worked with TensorFlow, Keras, and Scikit-learn to develop AI-powered solutions.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assests/about-pic.png" alt="Nivesh Pritmani profile picture"  width="400px" height="400px" id="self-profile"/>
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Nivesh Pritmani</h1>
-        <p class="section__text__p2">A passionate student from Gandhinagar, Gujarat, India. I'm currently pursuing my Bachelor of Technology degree in Information and Communication Technology at Pandit Deendayal Energy University.</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assests/NIVESH PRITMANI RESUME 2024 ML SDE.pdf')"
-          >
-            See My Resume
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assests/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/nivesh-pritmani-990316227/'"
-          />
-          <img
-            src="./assests/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/SnazzyNivesh522/'"
-          />
-        </div>
-      </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <!-- <div class="section__pic-container">
-          <img
-            src="./assests/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div> -->
-        <div class="about-content">
-            <div class="about-details">
-              <div class="detail">
-                <img src="./assests/experience.png" alt="Experience icon" class="icon">
-                <h3>Experience</h3>
-                <p>6 months<br> at <a href="https://www.linkedin.com/company/linux-socials/">Linux Socials</a></p>
-              </div>
-              <div class="detail">
-                <img src="./assests/education.png" alt="Education icon" class="icon">
-                <h3>Education</h3>
-                <p>B.Tech Bachelors Degree</p>
-              </div>
+
+    <!-- Experience Section -->
+    <section id="experience" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Internship Experience</h2>
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Research Intern at BISAG-N (May 2024 - Aug 2024)</h3>
+                    <ul>
+                        <li>Developed AI-powered precision support systems for agriculture and forestry management.</li>
+                        <li>Improved data accuracy by 40% and reduced analysis time by 30%.</li>
+                        <li>Worked with Python, TensorFlow, QGIS, and Google Earth Engine on large-scale geospatial datasets.</li>
+                    </ul>
+                </div>
             </div>
-            <div class="paragraph-container">
-              <p>My core interests lie in the fields of machine learning, Python automation, Java, Linux, and solving data structures and algorithms problems.</p>
-              <p>Academically, I'm well-versed in a variety of relevant subjects, including data structures, software methodology, algorithms analysis, database management, artificial intelligence, computer architecture, and more.</p>
-              <p>I'm continously exploring and expanding my capabilities in the world of computer science. I'm always eager to take on challenges and collaborate with like-minded individuals to create solutions that make a positive impact.</p>
-            </div>
-          </div>
-      <img
-        src="./assests/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+        </div>
     </section>
-    <section id="Interests">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Interests</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          
-          <div class="details-container">
-            <h2 class="experience-sub-title">Technological Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2>ls Projects</h2>
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column">
+                    <h4>BookWise - Library Management System</h4>
+                    <p class="flex-grow-1">Developed a comprehensive system using Flask, Bootstrap, and SQLite. Implemented secure user authentication with Google Authentication and Bcrypt, and created a user-friendly interface for seamless book management.</p>
+                    <a href="https://github.com/SnazzyNivesh522/Library-Management-System" class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Intermediate</p>
+                <div class="col-md-6 d-flex flex-column">
+                    <h4>Leetcode Code Extractor</h4>
+                    <p class="flex-grow-1">Engineered a web scraping tool using Selenium and BeautifulSoup to automate code extraction from LeetCode submissions. Improved efficiency in managing and reviewing coding solutions.</p>
+                    <a href="https://github.com/SnazzyNivesh522/Leetcode_Extract_Your_Code" class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MATLAB</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ML Libraries</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Linux</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>AWS</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Dockers</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
             </div>
-          </div>
         </div>
-        <div class="details-container">
-            <h2 class="experience-sub-title">Other Skills</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assests/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-      </div>
-      <img
-        src="./assests/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assests/cpu.png"
-                alt="Project 1"
-                class="project-img"
-              />
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center">Skills</h2>
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Programming Languages</h5>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Web Technologies</h5>
+                    <ul>
+                        <li>HTML, CSS, Bootstrap</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Machine Learning & AI</h5>
+                    <ul>
+                        <li>TensorFlow, Keras</li>
+                        <li>Scikit-learn</li>
+                    </ul>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Maveric Processor</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/SnazzyNivesh522/MaverickProcessor'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assests/videoapp.png"
-                alt="Project 2"
-                class="project-img"
-                height="51px"
-                width="51px"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Video Conversion App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href=''"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assests/daily-health-app.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Fitness App</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/SnazzyNivesh522/FitusionSports'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.figma.com/file/sLzggALZNhFsub2MZ8osfn/FitusionSports?type=design&node-id=0%3A1&mode=design&t=S9UxafO2ZZ7i0xIR-1'"
-              >
-                Figma Design
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assests/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assests/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:niveshpritmani@gmail.com">niveshpritmani@gmail.com</a></p>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Me</h2>
+            <hr class="mb-5">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <p>Email: <a href="mailto:niveshpritmani@gmail.com">niveshpritmani@gmail.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/nivesh-pritmani-990316227/">Nivesh Pritmani</a></p>
+                    <p>GitHub: <a href="https://github.com/SnazzyNivesh522">SnazzyNivesh522</a></p>
+                </div>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assests/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/nivesh-pritmani-990316227/">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#Interests">Interests</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>user@portfolio:~$ echo "Thank you for visiting my portfolio!"</p>
     </footer>
-    
-  </body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
