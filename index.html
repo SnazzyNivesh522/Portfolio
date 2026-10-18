@@ -2,314 +2,414 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nivesh Pritmani | Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="assets/linux-icon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivesh Pritmani | DevSecOps Engineer</title>
+  <meta name="description"
+    content="Nivesh Pritmani is a DevSecOps engineer working across multi-cloud infrastructure, network security, Elasticsearch platforms and security automation.">
+  <meta property="og:title" content="Nivesh Pritmani | DevSecOps Engineer">
+  <meta property="og:description"
+    content="Multi-cloud infrastructure, network security, Elasticsearch platforms and security automation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://snazzynivesh522.github.io/Portfolio/">
+  <meta property="og:image" content="https://snazzynivesh522.github.io/Portfolio/img/profile.jpeg">
+  <link rel="icon" type="image/png" href="assets/linux-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) { }
+  </script>
 </head>
 
 <body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Nivesh Pritmani</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top"><span class="brand-dot" aria-hidden="true"></span>Nivesh Pritmani</a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#pipeline">Experience</a></li>
+          <li><a href="#shell">Shell</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch color theme">
+              <svg class="i-sun" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <svg class="i-moon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </button>
+          </li>
+          <li><a class="btn btn-small" href="assets/Nivesh_Pritmani_Resume.pdf" target="_blank" rel="noopener">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Header -->
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>user@portfolio:~$ Nivesh Pritmani</h1>
-            <p>Passionate about Linux and open-source software. Welcome to my terminal-inspired portfolio!</p>
-            <a href="https://github.com/SnazzyNivesh522" class="btn btn-outline-light btn-lg" target="_blank">View My GitHub</a>
-            <!-- Added Resume Button -->
-            <a href="https://drive.google.com/file/d/1Xj3PjoNmBwakK0MZ4hD6X83N6-21EuqV/view?usp=drive_link" class="btn btn-outline-light btn-lg" target="_blank"
-                style="margin-left: 10px;">View My Resume</a>
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero-band" id="top">
+      <div class="hero wrap">
+        <div class="hero-copy">
+          <img class="avatar" src="img/profile.jpeg" alt="Portrait of Nivesh Pritmani" width="88" height="88">
+          <p class="status"><span class="pulse" aria-hidden="true"></span>Open to new roles</p>
+          <h1>Nivesh Pritmani</h1>
+          <p class="role"><span class="role-fixed">I work as a </span><span class="typed" id="typed">DevSecOps Engineer</span><span class="caret" aria-hidden="true"></span></p>
+          <p class="lede">I build and run secure infrastructure across AWS, OCI and on-prem data centers, and I
+            debug problems wherever they actually live: in the application, the search cluster, the hypervisor
+            or the network edge.</p>
+          <div class="actions">
+            <a class="btn" href="assets/Nivesh_Pritmani_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+            <a class="btn btn-ghost" href="https://www.linkedin.com/in/nivesh-pritmani-990316227/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn btn-ghost" href="https://github.com/SnazzyNivesh522" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
-    </header>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/profile.jpeg" alt="Profile Picture" class="img-fluid rounded-circle mb-3">
-                </div>
-                <div class="col-md-8">
-                    <h2>About Me</h2>
-                    <p>I am a final-year B.Tech student specializing in Information and Communication Technology at
-                        Pandit Deendayal Energy University. My passion lies in creating impactful solutions through
-                        full-stack development and machine learning. With a CGPA of 9.62, I have developed strong
-                        technical skills and a keen interest in applying them to real-world challenges.My coursework and
-                        projects have provided me with a solid foundation in programming languages such as Python, Java,
-                        and web technologies like HTML, CSS, and JavaScript. I have also gained hands-on experience with
-                        cloud technologies, including AWS, and DevOps tools like Docker. My expertise extends to machine
-                        learning, where I have worked with TensorFlow, Keras, and Scikit-learn to develop AI-powered
-                        solutions.</p>
-                </div>
-            </div>
-        </div>
+        <figure class="stack" aria-labelledby="stack-cap">
+          <p class="stack-cap" id="stack-cap">Pick a layer. I've debugged all of them.</p>
+          <ol class="layers" id="layers">
+            <li><button type="button" data-layer="app" aria-pressed="false"><span class="layer-name">Application &amp; APIs</span><span class="layer-tools">Python, FastAPI, Flask</span></button></li>
+            <li><button type="button" data-layer="data" aria-pressed="false"><span class="layer-name">Data &amp; search</span><span class="layer-tools">Elasticsearch, Logstash, PostgreSQL</span></button></li>
+            <li><button type="button" data-layer="secrets" aria-pressed="false"><span class="layer-name">Secrets &amp; identity</span><span class="layer-tools">Vault, PKI, mTLS, Keycloak</span></button></li>
+            <li><button type="button" data-layer="compute" aria-pressed="false"><span class="layer-name">Compute</span><span class="layer-tools">Linux, Docker, AWS, OCI</span></button></li>
+            <li><button type="button" data-layer="virt" aria-pressed="false"><span class="layer-name">Virtualization</span><span class="layer-tools">VMware ESXi, Proxmox, 40+ VMs</span></button></li>
+            <li><button type="button" data-layer="edge" aria-pressed="false"><span class="layer-name">Network edge</span><span class="layer-tools">NAT, Cloudflare, WireGuard, IPsec</span></button></li>
+          </ol>
+          <span class="packet" id="packet" aria-hidden="true"></span>
+          <figcaption class="layer-detail" id="layer-detail" aria-live="polite">
+            <span class="detail-hint">Each layer opens a real problem I've solved there.</span>
+          </figcaption>
+        </figure>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">echo $Internship Experience</h2>
-            <hr class="mb-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Research Intern at BISAG-N (May 2024 - Aug 2024)</h3>
-                    <ul>
-                        <li>Developed AI-powered precision support systems for agriculture and forestry management.</li>
-                        <li>Improved data accuracy by 40% and reduced analysis time by 30%.</li>
-                        <li>Worked with Python, TensorFlow, QGIS, and Google Earth Engine on large-scale geospatial
-                            datasets.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+    <!-- Facts -->
+    <section class="facts wrap reveal" aria-label="At a glance">
+      <dl>
+        <div><dt><span class="count" data-to="8">8</span></dt><dd>production regions across AWS, OCI and customer data centers</dd></div>
+        <div><dt>~<span class="count" data-to="80">80</span>%</dt><dd>less manual recon and VA effort from the ASM/VAPT platform</dd></div>
+        <div><dt><span class="count" data-to="20">20</span>+</dt><dd>security tools orchestrated in one automated pipeline</dd></div>
+        <div><dt><span class="count" data-to="40">40</span>+</dt><dd>virtual machines across 3 ESXi hosts</dd></div>
+      </dl>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2>ls Projects</h2>
-            <hr class="mb-5">
-            <div class="row">
-                <!-- BookWise - Library Management System -->
-                <div class="col-md-6 d-flex flex-column">
-                    <h4>BookWise - Library Management System</h4>
-                    <p class="flex-grow-1">
-                        Developed a comprehensive system using Flask, Bootstrap, and SQLite.
-                        Implemented secure user authentication with Google Authentication and
-                        Bcrypt, and created a user-friendly interface for seamless book
-                        management.
-                    </p>
-                    <a href="https://github.com/SnazzyNivesh522/Library-Management-System"
-                        class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
-                </div>
+    <!-- Selected work -->
+    <section class="section wrap" id="work">
+      <h2 class="reveal">Selected work</h2>
+      <p class="section-intro reveal">Production work at SharkStriker, a managed detection and response company, written
+        up like incident reports. Details stay at the architecture level.</p>
 
-                <!-- Leetcode Code Extractor -->
-                <div class="col-md-6 d-flex flex-column">
-                    <h4>Leetcode Code Extractor</h4>
-                    <p class="flex-grow-1">
-                        Engineered a web scraping tool using Selenium and BeautifulSoup to
-                        automate code extraction from LeetCode submissions. Improved efficiency
-                        in managing and reviewing coding solutions.
-                    </p>
-                    <a href="https://github.com/SnazzyNivesh522/Leetcode_Extract_Your_Code"
-                        class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
-                </div>
+      <div class="filters reveal" role="group" aria-label="Filter work by area">
+        <button type="button" class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="chip" data-filter="network" aria-pressed="false">Cloud &amp; network</button>
+        <button type="button" class="chip" data-filter="reliability" aria-pressed="false">Reliability</button>
+        <button type="button" class="chip" data-filter="security" aria-pressed="false">Security</button>
+        <button type="button" class="chip" data-filter="automation" aria-pressed="false">Automation</button>
+      </div>
 
-                <!-- Tenzies Game - React -->
-                <div class="col-md-6 d-flex flex-column">
-                    <h4>Tenzies Game - React</h4>
-                    <p class="flex-grow-1">
-                        A fun and interactive dice game built using React and Vite. The game
-                        challenges the player to roll dice until all dice show the same number.
-                        Players can freeze dice that show their desired value and continue
-                        rolling the rest until they win.
-                    </p>
-                    <ul>
-                        <li>
-                            <strong>Game Logic:</strong> Handles the state of dice, including
-                            random rolls and dice-holding functionality.
-                        </li>
-                        <li>
-                            <strong>Responsive Design:</strong> The app is optimized for
-                            different screen sizes using CSS grid and flexbox.
-                        </li>
-                        <li>
-                            <strong>Deployment:</strong> Deployed on GitHub Pages for public
-                            access.
-                        </li>
-                    </ul>
+      <div class="cases" id="cases">
+        <article class="case reveal" id="case-asm" data-tags="security automation">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-asm">
+            <span class="case-status s-prod">In production</span>
+            <span class="case-title">Attack-surface management and VAPT automation</span>
+            <span class="case-tags">Python · 20+ recon and VA tools · customer-facing</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-asm" hidden>
+            <p><strong>Problem.</strong> Testers spent most of every engagement on repetitive reconnaissance and
+              vulnerability scanning across 40–60 IP scopes.</p>
+            <p><strong>What I did.</strong> Architected a customer-facing platform that orchestrates more than twenty
+              reconnaissance and scanning tools (Nuclei, OpenVAS, Nmap, ZAP and others) into one automated workflow.</p>
+            <p class="outcome">Manual VA and recon effort dropped by about 80%, and the team now spends that time on
+              penetration testing and new vulnerabilities. It earned me the Rising Star award in Q1 2025.</p>
+          </div>
+        </article>
 
-                    <a href="https://github.com/SnazzyNivesh522/Tenzies-Game-React"
-                        class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
-                    <a href="https://SnazzyNivesh522.github.io/Tenzies-Game-React" class="btn btn-dark btn-sm mt-2">Live
-                        Link</a>
-                </div>
+        <article class="case reveal" id="case-network" data-tags="network security">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-network">
+            <span class="case-status s-prod">In production</span>
+            <span class="case-title">Multi-region network architecture and hardening</span>
+            <span class="case-tags">AWS · OCI · VPC design · Session Manager</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-network" hidden>
+            <p><strong>Problem.</strong> Servers in each region had their own public IPs and open outbound access, and
+              the cloud address plan had to coexist with a large on-prem and VPN network.</p>
+            <p><strong>What I did.</strong> Redesigned every region around a single controlled ingress, public and
+              private subnets, and restricted egress. Architected the VPC/VCN layout for seven regions on one
+              summarizable cloud supernet that cannot collide with on-prem ranges, and replaced bastion SSH with AWS
+              Systems Manager Session Manager.</p>
+            <p class="outcome">A much smaller external attack surface and an address plan that scales to new regions
+              without renumbering.</p>
+          </div>
+        </article>
 
-                <!-- AI Recipe Generator - React -->
-                <div class="col-md-6 d-flex flex-column">
-                    <h4>AI Recipe Generator - React</h4>
-                    <p class="flex-grow-1">
-                        A web application built using React and AI that generates personalized
-                        recipe suggestions based on user preferences. Users can input available
-                        ingredients, dietary restrictions, or cuisine preferences, and the app
-                        suggests a list of recipes they can create with those inputs.
-                    </p>
-                    <ul>
-                        <li>
-                            <strong>Ingredient-based search:</strong> Users can input the
-                            ingredients they have, and the app suggests recipes based on
-                            available items.
-                        </li>
-                        <li>
-                            <strong>Responsive design:</strong> The app is fully responsive,
-                            ensuring a smooth experience across all devices.
-                        </li>
-                        <li>
-                            <strong>Recipe details:</strong> Provides full recipe instructions,
-                            cooking time, and nutritional information.
-                        </li>
-                    </ul>
+        <article class="case reveal" id="case-es" data-tags="reliability">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-es">
+            <span class="case-status s-resolved">Resolved</span>
+            <span class="case-title">Bringing a SIEM Elasticsearch cluster back from flood-stage</span>
+            <span class="case-tags">Elasticsearch 7.14 · searchable snapshots · S3</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-es" hidden>
+            <p><strong>Problem.</strong> A production cluster hit the disk flood-stage watermark. Indices went
+              read-only, Kibana broke, and 962 shards were unassigned. Losing replicas was acceptable; losing indexed
+              data was not.</p>
+            <p><strong>What I did.</strong> Recovered the cluster with zero data loss, then architected disaster
+              recovery and S3-backed searchable snapshots so older data stays queryable from object storage instead of
+              filling primary disks.</p>
+            <p class="outcome">The cluster is back to healthy, and the storage pressure that caused the incident is
+              designed out.</p>
+          </div>
+        </article>
 
-                    <a href="https://github.com/SnazzyNivesh522/A-Recipe-Generator"
-                        class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
-                    <a href="https://SnazzyNivesh522.github.io/A-Recipe-Generator" class="btn btn-dark btn-sm mt-2">Live
-                        Link</a>
-                </div>
+        <article class="case reveal" id="case-isp" data-tags="network reliability">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-isp">
+            <span class="case-status s-resolved">Resolved</span>
+            <span class="case-title">An HTTPS outage across four ISPs</span>
+            <span class="case-tags">DNAT · Cloudflare load balancing · routing</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-isp" hidden>
+            <p><strong>Problem.</strong> When one of four ISP links went down, DNAT and Cloudflare load balancing on
+              port 443 fell apart for three domains.</p>
+            <p><strong>What I did.</strong> Traced the request path through Cloudflare, each ISP's NAT rules and our
+              routing to find where traffic was being misdirected, then corrected the flow.</p>
+            <p class="outcome">HTTPS restored for all three domains, with a clear picture of how failover behaves on
+              every link.</p>
+          </div>
+        </article>
 
-                <!-- Cloud Storage Frontend (React + Vite) -->
-                <div class="col-md-6 d-flex flex-column mt-4">
-                    <h4>Cloud Storage Frontend (React + Vite)</h4>
-                    <p class="flex-grow-1">
-                        A Google Drive–inspired frontend with user registration, OTP-based
-                        verification, file uploads, and folder management. Built using React,
-                        Vite, and Bootstrap, and deployed with environment-based configurations
-                        for flexible backend integration.
-                    </p>
-                    <ul>
-                        <li>
-                            <strong>OTP Verification & File Management:</strong> Secure sign-up
-                            flow and intuitive file/folder operations (upload, rename, move, trash).
-                        </li>
-                        <li>
-                            <strong>Responsive UI:</strong> Uses React-Bootstrap and Bootstrap for
-                            a seamless, mobile-friendly layout.
-                        </li>
-                        <li>
-                            <strong>GitHub Pages Deployment:</strong> Environment variables
-                            configure backend URLs, making it easy to switch environments.
-                        </li>
-                    </ul>
-                    <a href="https://github.com/SnazzyNivesh522/Cloud-Storage-Frontend-React"
-                        class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
-                    <a href="https://SnazzyNivesh522.github.io/Cloud-Storage-Frontend-React"
-                        class="btn btn-dark btn-sm mt-2">Live Link</a>
-                </div>
+        <article class="case reveal" id="case-secrets" data-tags="security">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-secrets">
+            <span class="case-status s-prod">In production</span>
+            <span class="case-title">Secrets, PKI and identity</span>
+            <span class="case-tags">HashiCorp Vault · internal CA · mTLS · Keycloak · Entra External ID</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-secrets" hidden>
+            <p><strong>What I did.</strong> Implemented TLS/mTLS with an internal CA and certificate renewal, and took
+              HashiCorp Vault from staging to production for the frontend, backend and Python teams. Led a two-phase
+              migration off WHMCS to a React-based architecture authenticated through Keycloak and Microsoft Entra
+              External ID, working around the identity providers' lack of per-user redirect URIs with a shared callback
+              and OAuth state routing.</p>
+            <p class="outcome">Credentials and certificates now come from one managed system instead of being scattered
+              across services.</p>
+          </div>
+        </article>
 
-                <!-- FastAPI Cloud Storage Application -->
-                <div class="col-md-6 d-flex flex-column mt-4">
-                    <h4>FastAPI Cloud Storage Application</h4>
-                    <p class="flex-grow-1">
-                        A robust drive-like backend built with FastAPI. Implements
-                        user authentication (JWT), email-based OTP verification, and
-                        file/folder CRUD operations with a trash (soft-delete) feature.
-                        Docker Compose is used for PostgreSQL and Adminer integration,
-                        and customizable templates power OTP and welcome emails.
-                    </p>
-                    <ul>
-                        <li>
-                            <strong>Authentication & OTP Verification:</strong> Secure
-                            registration flow, email notifications, and token-based login.
-                        </li>
-                        <li>
-                            <strong>File & Folder Management:</strong> Soft-delete,
-                            restore, rename, and move operations—plus zip downloads for
-                            entire folders.
-                        </li>
-                        <li>
-                            <strong>Scalable Project Structure:</strong> Organized routers,
-                            models, and utilities for clean maintainability.
-                        </li>
-                    </ul>
-                    <!-- Replace <repository-url> with your GitHub repo URL if different -->
-                    <a href="https://github.com/SnazzyNivesh522/Cloud-Storage-Backend-FastAPI"
-                        class="btn btn-dark btn-sm mt-auto">View on GitHub</a>
-                </div>
-            </div>
-        </div>
+        <article class="case reveal" id="case-gitlab" data-tags="automation">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-gitlab">
+            <span class="case-status s-prod">In production</span>
+            <span class="case-title">From manual deployments to GitLab</span>
+            <span class="case-tags">GitLab CI/CD · Ansible · Docker/Podman · OpenAPI</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-gitlab" hidden>
+            <p><strong>What I did.</strong> Spearheaded the company-wide move from manual deployments to a self-hosted
+              GitLab workflow, and wrote the documentation and training on Git, branching, versioning and CI/CD for
+              developers at every level. Separately, consolidated several standalone FastAPI and Flask services into a
+              single OpenAPI contract with change notifications for frontend consumers.</p>
+            <p class="outcome">Every team now ships through versioned pipelines instead of copying files to servers.</p>
+          </div>
+        </article>
+
+        <article class="case reveal" id="case-intel" data-tags="security automation">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-intel">
+            <span class="case-status s-prod">In production</span>
+            <span class="case-title">Threat intelligence and brand protection</span>
+            <span class="case-tags">NVD · MITRE ATT&amp;CK · D3FEND · WHOIS · DNS</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-intel" hidden>
+            <p><strong>Vulnerability intelligence.</strong> Daily CVE sync from NVD and MITRE, enriched with CWE, CAPEC,
+              ATT&amp;CK and D3FEND and mapped to ISO 27001, NIST CSF, SOC 2 and NIST SP 800-53.</p>
+            <p><strong>Brand protection.</strong> Detects cybersquatting and impersonation domains from homoglyph,
+              keyboard, typo, TLD and dictionary mutations, scored with WHOIS, DNS and infrastructure fingerprints.</p>
+          </div>
+        </article>
+
+        <article class="case reveal" id="case-moderation" data-tags="automation">
+          <button class="case-toggle" type="button" aria-expanded="false" aria-controls="cb-moderation">
+            <span class="case-status s-done">Completed</span>
+            <span class="case-title">Content moderation over 900GB of S3 data</span>
+            <span class="case-tags">Python · AWS S3 · image classification</span>
+            <span class="chev" aria-hidden="true"></span>
+          </button>
+          <div class="case-body" id="cb-moderation" hidden>
+            <p><strong>What I did.</strong> Built a classification service over 900GB+ in S3, about 6 million files
+              including 5.3 million images.</p>
+            <p class="outcome">Flagged roughly 100,000 policy-violating images and escalated about 3,600 high-risk items
+              to priority human review.</p>
+          </div>
+        </article>
+      </div>
+      <p class="empty" id="cases-empty" hidden>Nothing in this area yet. Choose another filter.</p>
     </section>
 
+    <!-- Career pipeline -->
+    <section class="section wrap" id="pipeline">
+      <h2 class="reveal">Experience</h2>
+      <p class="section-intro reveal">My career so far, as a pipeline. Select a stage to read its job log.</p>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center">cat Skills</h2>
-            <hr class="mb-5">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Programming Languages</h5>
-                    <ul>
-                        <li>Java</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Web Technologies</h5>
-                    <ul>
-                        <li>HTML, CSS, Bootstrap</li>
-                        <li>JavaScript, React</li>
-                        <li>Flask, FastAPI</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Machine Learning & AI</h5>
-                    <ul>
-                        <li>Pytorch, Keras, Tensorflow</li>
-                        <li>Scikit-learn</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Cloud Technologies</h5>
-                    <ul>
-                        <li>AWS (EC2, S3, LAMBDA, CloudFormation)</li>
-                        <li>Docker(Basic)</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Tools and concepts</h5>
-                    <ul>
-                        <li>Linux</li>
-                        <li>Junit(Unit Testing)</li>
-                        <li>RESTful APIs</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+      <ol class="pipe reveal" id="pipe">
+        <li class="stage" style="--i:0">
+          <button type="button" data-stage="0" aria-pressed="false">
+            <span class="st-icon s-pass" aria-hidden="true"></span>
+            <span class="st-job">commit</span>
+            <span class="st-role">Research Intern</span>
+            <span class="st-org">BISAG-N</span>
+            <span class="st-when">May – Aug 2024</span>
+          </button>
+        </li>
+        <li class="stage" style="--i:1">
+          <button type="button" data-stage="1" aria-pressed="false">
+            <span class="st-icon s-pass" aria-hidden="true"></span>
+            <span class="st-job">build</span>
+            <span class="st-role">Associate Software Developer</span>
+            <span class="st-org">SharkStriker</span>
+            <span class="st-when">Jan – Dec 2025</span>
+          </button>
+        </li>
+        <li class="stage" style="--i:2">
+          <button type="button" data-stage="2" aria-pressed="false">
+            <span class="st-icon s-pass" aria-hidden="true"></span>
+            <span class="st-job">scan</span>
+            <span class="st-role">Software Developer (Security)</span>
+            <span class="st-org">SharkStriker</span>
+            <span class="st-when">Jan – May 2026</span>
+          </button>
+        </li>
+        <li class="stage" style="--i:3">
+          <button type="button" data-stage="3" aria-pressed="true" class="is-on">
+            <span class="st-icon s-run" aria-hidden="true"></span>
+            <span class="st-job">deploy</span>
+            <span class="st-role">DevSecOps Engineer</span>
+            <span class="st-org">SharkStriker</span>
+            <span class="st-when">Jun 2026 – present</span>
+          </button>
+        </li>
+      </ol>
+
+      <div class="console reveal" aria-live="polite">
+        <div class="console-bar"><span></span><span></span><span></span><p id="log-title">job log · deploy</p></div>
+        <pre class="log" id="log"></pre>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center">curl Contact Me</h2>
-            <hr class="mb-5">
-            <div class="row">
-                <div class="col-md-6 mx-auto text-center">
-                    <p>Email: <a href="mailto:niveshpritmani@gmail.com">niveshpritmani@gmail.com</a></p>
-                    <p>LinkedIn: <a href="https://www.linkedin.com/in/nivesh-pritmani-990316227/">Nivesh Pritmani</a>
-                    </p>
-                    <p>GitHub: <a href="https://github.com/SnazzyNivesh522">SnazzyNivesh522</a></p>
-                </div>
-            </div>
+    <!-- Shell -->
+    <section class="section wrap" id="shell">
+      <h2 class="reveal">Try the shell</h2>
+      <p class="section-intro reveal">Prefer a terminal? Ask me things the way you'd ask a server. Type
+        <code>help</code> to start.</p>
+      <div class="console term reveal" id="term">
+        <div class="console-bar"><span></span><span></span><span></span><p>nivesh@portfolio: ~</p></div>
+        <div class="term-out" id="term-out" aria-live="polite"></div>
+        <form class="term-line" id="term-form" autocomplete="off">
+          <label for="term-in" class="prompt">nivesh@portfolio:~$</label>
+          <input id="term-in" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal command">
+        </form>
+        <div class="term-hints" aria-label="Suggested commands">
+          <button type="button" data-cmd="whoami">whoami</button>
+          <button type="button" data-cmd="skills">skills</button>
+          <button type="button" data-cmd="nmap nivesh">nmap nivesh</button>
+          <button type="button" data-cmd="contact">contact</button>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>user@portfolio:~$ echo "Thank you for visiting my portfolio!"</p>
-    </footer>
+    <!-- Skills -->
+    <section class="section wrap" id="skills">
+      <h2 class="reveal">Skills</h2>
+      <div class="skills">
+        <div class="reveal">
+          <h3>Cloud and infrastructure</h3>
+          <ul class="tags-list"><li>AWS (EC2, S3, IAM, VPC, SSM, SES, SQS)</li><li>OCI</li><li>VMware ESXi</li><li>Proxmox</li><li>Linux</li><li>Docker</li><li>Podman</li><li>Terraform (foundational)</li></ul>
+        </div>
+        <div class="reveal">
+          <h3>Networking</h3>
+          <ul class="tags-list"><li>TCP/IP</li><li>DNS</li><li>Routing and subnetting</li><li>NAT/DNAT</li><li>Firewalls</li><li>Switching</li><li>IPsec</li><li>WireGuard</li><li>Cloudflare load balancing</li></ul>
+        </div>
+        <div class="reveal">
+          <h3>Security</h3>
+          <ul class="tags-list"><li>ASM/EASM</li><li>VAPT automation</li><li>Vulnerability intelligence</li><li>TLS/mTLS</li><li>Internal PKI</li><li>HashiCorp Vault</li><li>Keycloak</li><li>Entra External ID</li><li>OAuth 2.0/OIDC</li></ul>
+        </div>
+        <div class="reveal">
+          <h3>Automation and CI/CD</h3>
+          <ul class="tags-list"><li>GitLab CI/CD</li><li>Ansible</li><li>Bash</li><li>Python automation</li><li>Kestra</li></ul>
+        </div>
+        <div class="reveal">
+          <h3>Data and observability</h3>
+          <ul class="tags-list"><li>Elasticsearch</li><li>Logstash</li><li>Filebeat</li><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>MinIO/S3</li><li>LibreNMS</li><li>Nagios</li></ul>
+        </div>
+        <div class="reveal">
+          <h3>Languages and backend</h3>
+          <ul class="tags-list"><li>Python</li><li>Go</li><li>JavaScript</li><li>FastAPI</li><li>Flask</li><li>React</li><li>REST and OpenAPI</li></ul>
+        </div>
+      </div>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Side projects -->
+    <section class="section wrap" id="projects">
+      <h2 class="reveal">Side projects</h2>
+      <ul class="repos">
+        <li class="reveal">
+          <a href="https://github.com/SnazzyNivesh522/Cloud-Storage-Backend-FastAPI" target="_blank" rel="noopener">Cloud Storage Backend</a>
+          <p>A drive-style FastAPI service with JWT auth, email OTP verification, file and folder CRUD with
+            soft-delete, and Docker Compose for PostgreSQL.</p>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/SnazzyNivesh522/Cloud-Storage-Frontend-React" target="_blank" rel="noopener">Cloud Storage Frontend</a>
+          <p>The React and Vite client for it, with OTP sign-up and environment-based backend configuration.</p>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/SnazzyNivesh522/Library-Management-System" target="_blank" rel="noopener">BookWise</a>
+          <p>A Flask library-management system with Google sign-in and bcrypt password hashing.</p>
+        </li>
+        <li class="reveal">
+          <a href="https://github.com/SnazzyNivesh522/Leetcode_Extract_Your_Code" target="_blank" rel="noopener">LeetCode Code Extractor</a>
+          <p>Selenium and BeautifulSoup scraper that pulls your accepted submissions out of LeetCode.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="section wrap" id="education">
+      <h2 class="reveal">Education and recognition</h2>
+      <ul class="plain reveal">
+        <li><strong>B.Tech, Information and Communication Technology</strong>, Pandit Deendayal Energy University,
+          2021–2025. CGPA 9.65 / 10.</li>
+        <li><strong>Rising Star award</strong>, SharkStriker, Q1 2025, for automating the core VAPT tooling.</li>
+        <li><strong>Publication</strong>, Springer, August 2025: <em>Predicting Agricultural Crop Yield in Indian
+            States Using Machine Learning Models.</em></li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section class="section wrap contact" id="contact">
+      <h2 class="reveal">Contact</h2>
+      <p class="reveal">Open to DevSecOps, security platform, cloud security and platform engineering roles.</p>
+      <ul class="contact-list reveal">
+        <li><a href="mailto:niveshpritmani@gmail.com">niveshpritmani@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/nivesh-pritmani-990316227/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/SnazzyNivesh522" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Nivesh Pritmani</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
